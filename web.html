@@ -1,0 +1,602 @@
+<html><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B600%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<title>Layoff Radar</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+    :root {
+      --primary-color: #0b80ee;
+      --secondary-color: #f0f7ff;
+      --text-primary: #111827;
+      --text-secondary: #6b7280;
+      --border-color: #e5e7eb;
+    }
+    .material-icons {
+      font-size: 24px;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-white">
+<div class="relative flex size-full min-h-screen flex-col justify-between group/design-root overflow-x-hidden" style='font-family: Inter, "Noto Sans", sans-serif;'>
+<div>
+<header class="sticky top-0 z-10 bg-white shadow-sm">
+<div class="container mx-auto flex items-center p-4">
+<div class="text-[var(--primary-color)] flex size-10 shrink-0 items-center justify-center rounded-full bg-[var(--secondary-color)]" data-icon="Radar" data-size="24px" data-weight="regular">
+<span class="material-icons">radar</span>
+</div>
+<h1 class="text-[var(--text-primary)] text-xl font-bold leading-tight tracking-tight ml-3 flex-1 text-center">Layoff Radar + Job Finder</h1>
+<div class="size-10 shrink-0"></div>
+</div>
+</header>
+<main class="container mx-auto px-4 py-6">
+<section class="mb-8">
+<h2 class="text-[var(--text-primary)] text-2xl font-semibold leading-tight tracking-tight mb-3">Project Overview</h2>
+<p class="text-[var(--text-secondary)] text-base font-normal leading-relaxed">
+            Layoff Radar + Job Finder is a comprehensive platform designed to provide real-time insights into company layoffs and assist job seekers in finding new opportunities.
+            This project leverages web scraping, data analysis, and machine learning to deliver accurate and timely information.
+          </p>
+</section>
+<section class="mb-8">
+<h2 class="text-[var(--text-primary)] text-2xl font-semibold leading-tight tracking-tight mb-4">Key Features</h2>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="flex flex-col gap-3 rounded-xl border border-[var(--border-color)] bg-white p-5 shadow-sm hover:shadow-md transition-shadow">
+<div class="flex items-center gap-3">
+<span class="material-icons text-[var(--primary-color)]">search</span>
+<h3 class="text-[var(--text-primary)] text-lg font-semibold leading-tight">Real-time Layoff Tracking</h3>
+</div>
+<p class="text-[var(--text-secondary)] text-sm">Stay updated with the latest layoff announcements across industries.</p>
+</div>
+<div class="flex flex-col gap-3 rounded-xl border border-[var(--border-color)] bg-white p-5 shadow-sm hover:shadow-md transition-shadow">
+<div class="flex items-center gap-3">
+<span class="material-icons text-[var(--primary-color)]">work_outline</span>
+<h3 class="text-[var(--text-primary)] text-lg font-semibold leading-tight">Job Search Assistance</h3>
+</div>
+<p class="text-[var(--text-secondary)] text-sm">Find relevant job openings tailored to your skills and preferences.</p>
+</div>
+<div class="flex flex-col gap-3 rounded-xl border border-[var(--border-color)] bg-white p-5 shadow-sm hover:shadow-md transition-shadow">
+<div class="flex items-center gap-3">
+<span class="material-icons text-[var(--primary-color)]">notifications_active</span>
+<h3 class="text-[var(--text-primary)] text-lg font-semibold leading-tight">Personalized Alerts</h3>
+</div>
+<p class="text-[var(--text-secondary)] text-sm">Receive notifications for new layoffs or job postings matching your criteria.</p>
+</div>
+<div class="flex flex-col gap-3 rounded-xl border border-[var(--border-color)] bg-white p-5 shadow-sm hover:shadow-md transition-shadow">
+<div class="flex items-center gap-3">
+<span class="material-icons text-[var(--primary-color)]">trending_up</span>
+<h3 class="text-[var(--text-primary)] text-lg font-semibold leading-tight">Market Trend Analysis</h3>
+</div>
+<p class="text-[var(--text-secondary)] text-sm">Gain insights into industry trends and job market dynamics.</p>
+</div>
+</div>
+</section>
+<section>
+<h2 class="text-[var(--text-primary)] text-2xl font-semibold leading-tight tracking-tight mb-4">Technologies Used</h2>
+<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+<div class="flex flex-col items-center gap-2 rounded-xl border border-[var(--border-color)] bg-white p-4 text-center shadow-sm hover:shadow-md transition-shadow">
+<span class="material-icons text-3xl text-[var(--primary-color)]">code</span>
+<h3 class="text-[var(--text-primary)] text-base font-medium">Python</h3>
+</div>
+<div class="flex flex-col items-center gap-2 rounded-xl border border-[var(--border-color)] bg-white p-4 text-center shadow-sm hover:shadow-md transition-shadow">
+<span class="material-icons text-3xl text-[var(--primary-color)]">storage</span>
+<h3 class="text-[var(--text-primary)] text-base font-medium">SQL</h3>
+</div>
+<div class="flex flex-col items-center gap-2 rounded-xl border border-[var(--border-color)] bg-white p-4 text-center shadow-sm hover:shadow-md transition-shadow">
+<span class="material-icons text-3xl text-[var(--primary-color)]">smart_toy</span>
+<h3 class="text-[var(--text-primary)] text-base font-medium">Machine Learning</h3>
+</div>
+<div class="flex flex-col items-center gap-2 rounded-xl border border-[var(--border-color)] bg-white p-4 text-center shadow-sm hover:shadow-md transition-shadow">
+<span class="material-icons text-3xl text-[var(--primary-color)]">insights</span>
+<h3 class="text-[var(--text-primary)] text-base font-medium">Data Visualization</h3>
+</div>
+</div>
+</section>
+</main>
+</div>
+<footer class="sticky bottom-0 border-t border-[var(--border-color)] bg-white">
+<nav class="container mx-auto flex justify-around items-center px-4 py-2">
+<a class="flex flex-col items-center justify-end gap-0.5 text-[var(--primary-color)]" href="#">
+<span class="material-icons">home</span>
+<span class="text-xs font-medium">Home</span>
+</a>
+<a class="flex flex-col items-center justify-end gap-0.5 text-[var(--text-secondary)] hover:text-[var(--primary-color)]" href="#">
+<span class="material-icons">search</span>
+<span class="text-xs font-medium">Search</span>
+</a>
+<a class="flex flex-col items-center justify-end gap-0.5 text-[var(--text-secondary)] hover:text-[var(--primary-color)]" href="#">
+<span class="material-icons">description</span>
+<span class="text-xs font-medium">Resume</span>
+</a>
+</nav>
+<div class="h-safe-area-bottom bg-white"></div>
+</footer>
+</div>
+
+</body></html>
+<html><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B600%3B700&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<title>Layoff Radar + Job Finder</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+      :root {
+        --primary-color: #0c7ff2;
+        --secondary-color: #60758a;
+        --background-color: #f8f9fa;
+        --card-background-color: #ffffff;
+        --text-primary: #111418;
+        --text-secondary: #60758a;
+        --border-color: #e0e0e0;
+      }
+      body {
+        font-family: "Inter", "Noto Sans", sans-serif;
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-[var(--background-color)]">
+<div class="relative flex size-full min-h-screen flex-col justify-between group/design-root overflow-x-hidden">
+<div class="flex-grow">
+<header class="sticky top-0 z-50 bg-[var(--card-background-color)] shadow-sm">
+<div class="container mx-auto flex items-center p-4">
+<h1 class="text-[var(--primary-color)] text-xl font-bold leading-tight tracking-tighter flex-1 text-center">
+              Layoff Radar
+            </h1>
+<button aria-label="Settings" class="flex items-center justify-center rounded-full h-10 w-10 bg-transparent text-[var(--text-primary)] hover:bg-gray-100 transition-colors">
+<span class="material-icons">settings</span>
+</button>
+</div>
+</header>
+<main class="container mx-auto px-4 py-6">
+<h2 class="text-[var(--text-primary)] text-2xl font-semibold leading-tight tracking-tight mb-6">Home</h2>
+<div class="space-y-6">
+<div class="bg-[var(--card-background-color)] rounded-xl shadow-lg overflow-hidden">
+<div class="w-full h-48 bg-center bg-no-repeat bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAvdqCayXqoJ5p9rzOltSxScfhCzX8X90MU1aASAc-Iu-W5YJiicBmjFtEpklCatpR_IW2NrNpammyTkv0eZ1cw-fTFLzZ8wz3FcF-Ah8XTEbdN53cW-lVTtKS8pFgqEQPnViJfdFBrue6VggUAXAiM70LtpEJUyjBM6-HA6rmB4dnCB9cc8E8fqQirs0bzE4Oh42SUGzOj75TkBFFfT7akx0RcXUgQachNyBUeTI8T2bT50Y5yBkB5c4k5b700vDH5dfc5h-U7v6A");'></div>
+<div class="p-5">
+<p class="text-[var(--primary-color)] text-sm font-medium">Layoff Radar</p>
+<p class="text-[var(--text-primary)] text-lg font-semibold leading-tight mt-1">Stay informed about company layoffs</p>
+<p class="text-[var(--text-secondary)] text-sm font-normal leading-normal mt-2">
+                  Get real-time updates on company layoffs and workforce reductions.
+                </p>
+</div>
+</div>
+<div class="bg-[var(--card-background-color)] rounded-xl shadow-lg overflow-hidden">
+<div class="w-full h-48 bg-center bg-no-repeat bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuABx9eX5W0K9wg9T1AU0gk8rM7JX4bTp8s6yRRUpJdjiy0L_MRCvxzV96sJP9DJbLwnAp2yYgVyp7h2rYlDLFf1XuVuJB_ht83VPke_qs-mNZRqnqED9lxt8kDAKJh2yUP-Q7R_4nk3pfunWvgR99ZiBmUKqsEGPewcfajOu3BaIypUx1CVl4jlJrwuuyLpGrvqizfI6WnMvTA-rPWUeE4DGSbTyVn4yRq3KRtPzLZZ53MGBQaLvA8ugsmcPgEJUQ0hvL8x5Am9Pmk");'></div>
+<div class="p-5">
+<p class="text-[var(--primary-color)] text-sm font-medium">Job Finder</p>
+<p class="text-[var(--text-primary)] text-lg font-semibold leading-tight mt-1">Find your next opportunity</p>
+<p class="text-[var(--text-secondary)] text-sm font-normal leading-normal mt-2">
+                  Search for jobs based on your skills and experience.
+                </p>
+</div>
+</div>
+<div class="bg-[var(--card-background-color)] rounded-xl shadow-lg overflow-hidden">
+<div class="w-full h-48 bg-center bg-no-repeat bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBB8KJnWm15XTANMMHyq87015bLrJxqqRM4KHxP-c1UEPrYS_XpJWcsItlmYplx7qizE5d0z67r-TwNvmIUBXWi9saEHFGlop6Db2mdppTp5o0MFhan4m9GNKDgGEqEbH0LJ98vpqPcpkPbqdg7SYVWwWE1ALmDlsjUxzwSYZbOGxk5ktzXtXfYknsu16Fa6UHxVELiYrGQBEgdICFvZmA7t9h3xK8m0rsReZuq8FXEqhzLjoVt6Olq-ytve8gVF7o1XnAPGUSRha8");'></div>
+<div class="p-5">
+<p class="text-[var(--primary-color)] text-sm font-medium">Resume Match</p>
+<p class="text-[var(--text-primary)] text-lg font-semibold leading-tight mt-1">Match your resume to open roles</p>
+<p class="text-[var(--text-secondary)] text-sm font-normal leading-normal mt-2">
+                  Upload your resume and find jobs that match your qualifications.
+                </p>
+</div>
+</div>
+</div>
+</main>
+</div>
+<footer class="sticky bottom-0 z-50">
+<nav class="flex bg-[var(--card-background-color)] border-t border-[var(--border-color)] shadow-[0_-2px_10px_rgba(0,0,0,0.05)]">
+<a aria-current="page" class="flex flex-1 flex-col items-center justify-center gap-1 py-3 text-[var(--primary-color)] hover:bg-gray-50 transition-colors" href="#">
+<span class="material-icons">home</span>
+<p class="text-xs font-medium">Home</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-center gap-1 py-3 text-[var(--text-secondary)] hover:bg-gray-50 transition-colors" href="#">
+<span class="material-icons-outlined">bar_chart</span>
+<p class="text-xs font-medium">Dashboard</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-center gap-1 py-3 text-[var(--text-secondary)] hover:bg-gray-50 transition-colors" href="#">
+<span class="material-icons-outlined">work_outline</span>
+<p class="text-xs font-medium">Job Search</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-center gap-1 py-3 text-[var(--text-secondary)] hover:bg-gray-50 transition-colors" href="#">
+<span class="material-icons-outlined">description</span>
+<p class="text-xs font-medium">Resume Match</p>
+</a>
+</nav>
+<div class="h-env(safe-area-inset-bottom) bg-[var(--card-background-color)]"></div>
+</footer>
+</div>
+
+</body></html>
+
+<html><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B600%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<title>Layoff Radar</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+      :root {
+        --primary-color: #0c7ff2;
+        --secondary-color: #f0f2f5;
+        --text-primary: #111418;
+        --text-secondary: #60758a;
+      }
+      body {
+        font-family: "Inter", "Noto Sans", sans-serif;
+      }
+      .material-icons {
+        font-size: 24px;
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-white">
+<div class="relative flex size-full min-h-screen flex-col justify-between group/design-root overflow-x-hidden">
+<header class="sticky top-0 z-10 bg-white shadow-sm">
+<div class="flex items-center p-4">
+<button class="text-[var(--text-primary)] p-2 -ml-2">
+<span class="material-icons">arrow_back_ios_new</span>
+</button>
+<h1 class="text-[var(--text-primary)] text-xl font-semibold leading-tight tracking-tight flex-1 text-center pr-8">Tech Stack</h1>
+</div>
+</header>
+<main class="flex-grow overflow-y-auto px-4 pt-6 pb-20 space-y-6">
+<section>
+<h2 class="text-[var(--text-primary)] text-2xl font-bold leading-tight tracking-tight mb-4">Languages</h2>
+<div class="grid grid-cols-2 gap-4">
+<div class="flex flex-col items-center justify-center gap-2 rounded-xl border border-[var(--secondary-color)] bg-white p-4 shadow-sm hover:shadow-md transition-shadow">
+<div class="flex items-center justify-center size-12 bg-[var(--primary-color)] bg-opacity-10 rounded-full text-[var(--primary-color)]">
+<span class="material-icons">code</span>
+</div>
+<h3 class="text-[var(--text-primary)] text-base font-medium leading-tight text-center">Python</h3>
+</div>
+<div class="flex flex-col items-center justify-center gap-2 rounded-xl border border-[var(--secondary-color)] bg-white p-4 shadow-sm hover:shadow-md transition-shadow">
+<div class="flex items-center justify-center size-12 bg-[var(--primary-color)] bg-opacity-10 rounded-full text-[var(--primary-color)]">
+<span class="material-icons">javascript</span>
+</div>
+<h3 class="text-[var(--text-primary)] text-base font-medium leading-tight text-center">JavaScript</h3>
+</div>
+<div class="flex flex-col items-center justify-center gap-2 rounded-xl border border-[var(--secondary-color)] bg-white p-4 shadow-sm hover:shadow-md transition-shadow">
+<div class="flex items-center justify-center size-12 bg-[var(--primary-color)] bg-opacity-10 rounded-full text-[var(--primary-color)]">
+<span class="material-icons">html</span>
+</div>
+<h3 class="text-[var(--text-primary)] text-base font-medium leading-tight text-center">HTML</h3>
+</div>
+<div class="flex flex-col items-center justify-center gap-2 rounded-xl border border-[var(--secondary-color)] bg-white p-4 shadow-sm hover:shadow-md transition-shadow">
+<div class="flex items-center justify-center size-12 bg-[var(--primary-color)] bg-opacity-10 rounded-full text-[var(--primary-color)]">
+<span class="material-icons">css</span>
+</div>
+<h3 class="text-[var(--text-primary)] text-base font-medium leading-tight text-center">CSS</h3>
+</div>
+</div>
+</section>
+<section>
+<h2 class="text-[var(--text-primary)] text-2xl font-bold leading-tight tracking-tight mb-4">Libraries</h2>
+<div class="grid grid-cols-2 gap-4">
+<div class="flex flex-col items-center justify-center gap-2 rounded-xl border border-[var(--secondary-color)] bg-white p-4 shadow-sm hover:shadow-md transition-shadow">
+<div class="flex items-center justify-center size-12 bg-[var(--primary-color)] bg-opacity-10 rounded-full text-[var(--primary-color)]">
+<span class="material-icons">analytics</span>
+</div>
+<h3 class="text-[var(--text-primary)] text-base font-medium leading-tight text-center">Pandas</h3>
+</div>
+<div class="flex flex-col items-center justify-center gap-2 rounded-xl border border-[var(--secondary-color)] bg-white p-4 shadow-sm hover:shadow-md transition-shadow">
+<div class="flex items-center justify-center size-12 bg-[var(--primary-color)] bg-opacity-10 rounded-full text-[var(--primary-color)]">
+<span class="material-icons">build</span>
+</div>
+<h3 class="text-[var(--text-primary)] text-base font-medium leading-tight text-center">React</h3>
+</div>
+<div class="flex flex-col items-center justify-center gap-2 rounded-xl border border-[var(--secondary-color)] bg-white p-4 shadow-sm hover:shadow-md transition-shadow">
+<div class="flex items-center justify-center size-12 bg-[var(--primary-color)] bg-opacity-10 rounded-full text-[var(--primary-color)]">
+<span class="material-icons">dns</span>
+</div>
+<h3 class="text-[var(--text-primary)] text-base font-medium leading-tight text-center">Node.js</h3>
+</div>
+<div class="flex flex-col items-center justify-center gap-2 rounded-xl border border-[var(--secondary-color)] bg-white p-4 shadow-sm hover:shadow-md transition-shadow">
+<div class="flex items-center justify-center size-12 bg-[var(--primary-color)] bg-opacity-10 rounded-full text-[var(--primary-color)]">
+<span class="material-icons">http</span>
+</div>
+<h3 class="text-[var(--text-primary)] text-base font-medium leading-tight text-center">Express.js</h3>
+</div>
+</div>
+</section>
+<section>
+<h2 class="text-[var(--text-primary)] text-2xl font-bold leading-tight tracking-tight mb-4">APIs</h2>
+<div class="grid grid-cols-2 gap-4">
+<div class="flex flex-col items-center justify-center gap-2 rounded-xl border border-[var(--secondary-color)] bg-white p-4 shadow-sm hover:shadow-md transition-shadow">
+<div class="flex items-center justify-center size-12 bg-[var(--primary-color)] bg-opacity-10 rounded-full text-[var(--primary-color)]">
+<span class="material-icons">map</span>
+</div>
+<h3 class="text-[var(--text-primary)] text-base font-medium leading-tight text-center">Google Maps API</h3>
+</div>
+<div class="flex flex-col items-center justify-center gap-2 rounded-xl border border-[var(--secondary-color)] bg-white p-4 shadow-sm hover:shadow-md transition-shadow">
+<div class="flex items-center justify-center size-12 bg-[var(--primary-color)] bg-opacity-10 rounded-full text-[var(--primary-color)]">
+<span class="material-icons">hub</span>
+</div>
+<h3 class="text-[var(--text-primary)] text-base font-medium leading-tight text-center">GitHub API</h3>
+</div>
+<div class="flex flex-col items-center justify-center gap-2 rounded-xl border border-[var(--secondary-color)] bg-white p-4 shadow-sm hover:shadow-md transition-shadow">
+<div class="flex items-center justify-center size-12 bg-[var(--primary-color)] bg-opacity-10 rounded-full text-[var(--primary-color)]">
+<span class="material-icons">people</span>
+</div>
+<h3 class="text-[var(--text-primary)] text-base font-medium leading-tight text-center">LinkedIn API</h3>
+</div>
+</div>
+</section>
+</main>
+<footer class="fixed bottom-0 left-0 right-0 bg-white border-t border-[var(--secondary-color)] shadow-top">
+<nav class="flex justify-around items-center px-2 py-2">
+<a class="flex flex-col items-center justify-end gap-0.5 text-[var(--text-secondary)] hover:text-[var(--primary-color)] transition-colors p-2" href="#">
+<span class="material-icons">home</span>
+<p class="text-xs font-medium leading-normal tracking-[0.015em]">Home</p>
+</a>
+<a class="flex flex-col items-center justify-end gap-0.5 text-[var(--text-secondary)] hover:text-[var(--primary-color)] transition-colors p-2" href="#">
+<span class="material-icons">info</span>
+<p class="text-xs font-medium leading-normal tracking-[0.015em]">About</p>
+</a>
+<a class="flex flex-col items-center justify-end gap-0.5 text-[var(--primary-color)] p-2 rounded-full bg-[var(--primary-color)] bg-opacity-10" href="#">
+<span class="material-icons !text-[var(--primary-color)]">work</span>
+<p class="text-xs font-bold leading-normal tracking-[0.015em] text-[var(--primary-color)]">Project</p>
+</a>
+<a class="flex flex-col items-center justify-end gap-0.5 text-[var(--text-secondary)] hover:text-[var(--primary-color)] transition-colors p-2" href="#">
+<span class="material-icons">email</span>
+<p class="text-xs font-medium leading-normal tracking-[0.015em]">Contact</p>
+</a>
+</nav>
+<div class="h-safe-area-bottom bg-white"></div>
+</footer>
+</div>
+
+</body></html>
+<html><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B600%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<title>Layoff Radar </title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+    :root {
+      --primary-color: #0c7ff2;
+      --text-primary: #111827;
+      --text-secondary: #6b7280;
+      --bg-light: #f9fafb;
+      --border-light: #e5e7eb;
+    }
+    body {
+      font-family: 'Inter', "Noto Sans", sans-serif;
+    }
+    .material-icons {
+      font-size: 24px;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-white">
+<div class="relative flex size-full min-h-screen flex-col group/design-root overflow-x-hidden">
+<header class="sticky top-0 z-10 bg-white shadow-sm">
+<div class="flex items-center p-4">
+<button class="text-[var(--text-primary)] p-2 -ml-2">
+<span class="material-icons">arrow_back_ios_new</span>
+</button>
+<h1 class="text-[var(--text-primary)] text-xl font-semibold leading-tight flex-1 text-center pr-8">Layoff Radar + Job Finder</h1>
+</div>
+</header>
+<main class="flex-grow">
+<section class="p-5">
+<h2 class="text-[var(--text-primary)] text-2xl font-bold leading-tight tracking-tight mb-3">Project Overview</h2>
+<p class="text-[var(--text-secondary)] text-base leading-relaxed">
+          This project, "Layoff Radar," is a comprehensive data analytics application designed to provide real-time insights into company layoffs and job
+          opportunities. It leverages web scraping, data processing, and visualization techniques to deliver actionable information to job seekers and industry analysts.
+        </p>
+</section>
+<section class="p-5 pt-0">
+<h2 class="text-[var(--text-primary)] text-2xl font-bold leading-tight tracking-tight mb-4">Key Features</h2>
+<div class="space-y-4">
+<div class="flex items-center gap-4 rounded-lg border border-[var(--border-light)] p-4 bg-[var(--bg-light)]">
+<div class="text-[var(--primary-color)] flex items-center justify-center rounded-lg bg-blue-100 shrink-0 size-12">
+<span class="material-icons">insights</span>
+</div>
+<p class="text-[var(--text-primary)] text-base font-medium flex-1">Real-time Layoff Tracking</p>
+</div>
+<div class="flex items-center gap-4 rounded-lg border border-[var(--border-light)] p-4 bg-[var(--bg-light)]">
+<div class="text-[var(--primary-color)] flex items-center justify-center rounded-lg bg-blue-100 shrink-0 size-12">
+<span class="material-icons">work_outline</span>
+</div>
+<p class="text-[var(--text-primary)] text-base font-medium flex-1">Job Opportunity Aggregation</p>
+</div>
+<div class="flex items-center gap-4 rounded-lg border border-[var(--border-light)] p-4 bg-[var(--bg-light)]">
+<div class="text-[var(--primary-color)] flex items-center justify-center rounded-lg bg-blue-100 shrink-0 size-12">
+<span class="material-icons">bar_chart</span>
+</div>
+<p class="text-[var(--text-primary)] text-base font-medium flex-1">Interactive Data Visualization</p>
+</div>
+<div class="flex items-center gap-4 rounded-lg border border-[var(--border-light)] p-4 bg-[var(--bg-light)]">
+<div class="text-[var(--primary-color)] flex items-center justify-center rounded-lg bg-blue-100 shrink-0 size-12">
+<span class="material-icons">devices</span>
+</div>
+<p class="text-[var(--text-primary)] text-base font-medium flex-1">User-Friendly Interface</p>
+</div>
+</div>
+</section>
+<section class="p-5">
+<h2 class="text-[var(--text-primary)] text-2xl font-bold leading-tight tracking-tight mb-4">Project Links</h2>
+<div class="space-y-3">
+<a class="flex items-center gap-4 rounded-lg border border-[var(--border-light)] p-4 bg-white hover:bg-gray-50 transition-colors duration-150" href="#">
+<div class="text-gray-700 flex items-center justify-center rounded-lg bg-gray-100 shrink-0 size-10">
+<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+<path d="M208.31,75.68A59.78,59.78,0,0,0,202.93,28,8,8,0,0,0,196,24a59.75,59.75,0,0,0-48,24H124A59.75,59.75,0,0,0,76,24a8,8,0,0,0-6.93,4,59.78,59.78,0,0,0-5.38,47.68A58.14,58.14,0,0,0,56,104v8a56.06,56.06,0,0,0,48.44,55.47A39.8,39.8,0,0,0,96,192v8H72a24,24,0,0,1-24-24A40,40,0,0,0,8,136a8,8,0,0,0,0,16,24,24,0,0,1,24,24,40,40,0,0,0,40,40H96v16a8,8,0,0,0,16,0V192a24,24,0,0,1,48,0v40a8,8,0,0,0,16,0V192a39.8,39.8,0,0,0-8.44-24.53A56.06,56.06,0,0,0,216,112v-8A58.14,58.14,0,0,0,208.31,75.68ZM200,112a40,40,0,0,1-40,40H112a40,40,0,0,1-40-40v-8a41.74,41.74,0,0,1,6.9-22.48A8,8,0,0,0,80,73.83a43.81,43.81,0,0,1,.79-33.58,43.88,43.88,0,0,1,32.32,20.06A8,8,0,0,0,119.82,64h32.35a8,8,0,0,0,6.74-3.69,43.87,43.87,0,0,1,32.32-20.06A43.81,43.81,0,0,1,192,73.83a8.09,8.09,0,0,0,1,7.65A41.72,41.72,0,0,1,200,104Z"></path>
+</svg>
+</div>
+<p class="text-[var(--text-primary)] text-base font-medium flex-1">GitHub Repository</p>
+<span class="material-icons text-[var(--text-secondary)]">chevron_right</span>
+</a>
+<a class="flex items-center gap-4 rounded-lg border border-[var(--border-light)] p-4 bg-white hover:bg-gray-50 transition-colors duration-150" href="#">
+<div class="text-gray-700 flex items-center justify-center rounded-lg bg-gray-100 shrink-0 size-10">
+<span class="material-icons">public</span>
+</div>
+<p class="text-[var(--text-primary)] text-base font-medium flex-1">Live Application</p>
+<span class="material-icons text-[var(--text-secondary)]">chevron_right</span>
+</a>
+<a class="flex items-center gap-4 rounded-lg border border-[var(--border-light)] p-4 bg-white hover:bg-gray-50 transition-colors duration-150" href="#">
+<div class="text-gray-700 flex items-center justify-center rounded-lg bg-gray-100 shrink-0 size-10">
+<span class="material-icons">person_outline</span>
+</div>
+<p class="text-[var(--text-primary)] text-base font-medium flex-1">Portfolio</p>
+<span class="material-icons text-[var(--text-secondary)]">chevron_right</span>
+</a>
+</div>
+</section>
+</main>
+<footer class="sticky bottom-0 bg-white border-t border-[var(--border-light)]">
+<nav class="flex justify-around items-center px-2 py-1">
+<a class="flex flex-col items-center justify-center gap-0.5 p-2 text-[var(--primary-color)] rounded-lg w-1/4" href="#">
+<span class="material-icons">home</span>
+<span class="text-xs font-medium">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center gap-0.5 p-2 text-[var(--text-secondary)] hover:text-[var(--primary-color)] rounded-lg w-1/4" href="#">
+<span class="material-icons">search</span>
+<span class="text-xs font-medium">Search</span>
+</a>
+<a class="flex flex-col items-center justify-center gap-0.5 p-2 text-[var(--text-secondary)] hover:text-[var(--primary-color)] rounded-lg w-1/4" href="#">
+<span class="material-icons">bookmark_border</span>
+<span class="text-xs font-medium">Saved</span>
+</a>
+<a class="flex flex-col items-center justify-center gap-0.5 p-2 text-[var(--text-secondary)] hover:text-[var(--primary-color)] rounded-lg w-1/4" href="#">
+<span class="material-icons">person_outline</span>
+<span class="text-xs font-medium">Profile</span>
+</a>
+</nav>
+<div class="h-safe-area-bottom bg-white"></div>
+</footer>
+</div>
+
+</body></html>
+
+<html><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B600%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<title>Layoff Radar</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+    :root {
+      --primary-color: #0c7ff2;
+      --secondary-color: #f0f9ff;--text-primary: #1f2937;--text-secondary: #4b5563;}
+    body {
+      font-family: 'Inter', "Noto Sans", sans-serif;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-gray-50">
+<div class="relative flex min-h-screen flex-col group/design-root overflow-x-hidden">
+<header class="sticky top-0 z-10 bg-white shadow-sm">
+<div class="container mx-auto px-4">
+<div class="flex h-16 items-center justify-between">
+<button class="text-gray-600 hover:text-[var(--primary-color)] focus:outline-none">
+<span class="material-icons">arrow_back_ios_new</span>
+</button>
+<h2 class="text-xl font-semibold text-[var(--text-primary)]">Portfolio</h2>
+<button class="text-gray-600 hover:text-[var(--primary-color)] focus:outline-none">
+<span class="material-icons">more_vert</span>
+</button>
+</div>
+</div>
+</header>
+<main class="flex-grow">
+<div class="bg-white pt-8 pb-12">
+<div class="container mx-auto px-6">
+<div class="mb-6 flex items-center space-x-3">
+<div class="rounded-full bg-[var(--secondary-color)] p-3">
+<span class="material-icons text-[var(--primary-color)] text-3xl">radar</span>
+</div>
+<h1 class="text-3xl font-bold tracking-tight text-[var(--text-primary)]">Layoff Radar</h1>
+</div>
+<p class="text-lg font-normal text-[var(--text-secondary)] leading-relaxed">
+            This project is a comprehensive tool designed to help job seekers navigate the challenging landscape of layoffs and job searching. It combines real-time layoff data with a robust job search engine, providing users with up-to-date information and relevant job opportunities.
+          </p>
+<div class="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2">
+<div class="rounded-xl border border-gray-200 bg-white p-6 shadow-sm">
+<div class="flex items-center space-x-3">
+<span class="material-icons text-2xl text-[var(--primary-color)]">analytics</span>
+<h3 class="text-lg font-semibold text-[var(--text-primary)]">Key Features</h3>
+</div>
+<ul class="mt-4 list-disc list-inside space-y-2 text-[var(--text-secondary)]">
+<li>Real-time layoff tracking</li>
+<li>Advanced job search filters</li>
+<li>Personalized job alerts</li>
+<li>Company insights &amp; reviews</li>
+</ul>
+</div>
+<div class="rounded-xl border border-gray-200 bg-[var(--secondary-color)] p-6 shadow-sm">
+<div class="flex items-center space-x-3">
+<span class="material-icons text-2xl text-[var(--primary-color)]">lightbulb</span>
+<h3 class="text-lg font-semibold text-[var(--text-primary)]">Value Proposition</h3>
+</div>
+<p class="mt-4 text-[var(--text-secondary)] leading-relaxed">
+                Empowering job seekers with timely data and actionable insights to make informed decisions and find their next career opportunity faster.
+              </p>
+</div>
+</div>
+</div>
+</div>
+<div class="container mx-auto px-6 py-8">
+<h2 class="mb-4 text-2xl font-semibold text-[var(--text-primary)]">Project Overview</h2>
+<div class="grid grid-cols-1 gap-4 md:grid-cols-3">
+<div class="rounded-lg bg-white p-4 shadow">
+<p class="text-sm font-medium text-[var(--primary-color)]">Status</p>
+<p class="text-lg font-semibold text-[var(--text-primary)]">Completed</p>
+</div>
+<div class="rounded-lg bg-white p-4 shadow">
+<p class="text-sm font-medium text-[var(--primary-color)]">Duration</p>
+<p class="text-lg font-semibold text-[var(--text-primary)]">3 Months</p>
+</div>
+<div class="rounded-lg bg-white p-4 shadow">
+<p class="text-sm font-medium text-[var(--primary-color)]">Role</p>
+<p class="text-lg font-semibold text-[var(--text-primary)]">Lead Data Analyst</p>
+</div>
+</div>
+</div>
+</main>
+<footer class="bg-gray-100 py-4 text-center">
+<p class="text-sm text-gray-500">© 2024 Your Name. All rights reserved.</p>
+</footer>
+</div>
+
+</body></html>
